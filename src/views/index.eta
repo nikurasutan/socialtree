@@ -1,3 +1,0 @@
-<% layout('layouts/main.eta') %>
-
-The answer to everything is <%= it.answer %>
