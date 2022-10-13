@@ -1,1 +1,3 @@
-Hello World from eta
+<% layout('layouts/main.eta') %>
+
+The answer to everything is <%= it.answer %>

@@ -10,7 +10,9 @@ app.set('view engine', engine)
 app.set('views', './src/views')
 
 app.get('/', (req, res) => {
-    res.render('index')
+    res.render('index', {
+        answer: 42
+    })
 })
 
 app.listen(port, () => console.log(`App running on port ${port}, with view engine ${engine}`))
