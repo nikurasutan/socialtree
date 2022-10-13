@@ -1,0 +1,13 @@
+{
+  "name": "socialtree",
+  "version": "0.0.0",
+  "description": "The awesome and damn simple, selfhosted alternative to linktree",
+  "main": "src/index.js",
+  "author": "nikurasu",
+  "type": "module",
+  "license": "MIT",
+  "dependencies": {
+    "eta": "^1.12.3",
+    "express": "^4.18.2"
+  }
+}
