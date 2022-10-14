@@ -7,11 +7,19 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "start",
+            "name": "start with node",
             "skipFiles": [
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}/src/index.js"
+        },
+        {
+            "type": "node",
+            "name": "start with yarn",
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "runtimeExecutable": "yarn",
+            "runtimeArgs": ["start"],
         },
         {
             "type": "node",
