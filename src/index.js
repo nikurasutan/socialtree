@@ -15,10 +15,10 @@ app.use(express.static('src/assets'))
 
 app.get('/', (req, res) => {
     let config = yaml.load(fs.readFileSync('config/config.yml'), 'utf8')
-    console.log(JSON.stringify(config))
     res.render('index', {
         name: config.name,
-        filenameProfilePic: config.profilePic ? config.profilePic : 'profilepic.jpg'
+        filenameProfilePic: config.profilePic ? config.profilePic : 'profilepic.jpg',
+        links: config.links
     })
 })
 
