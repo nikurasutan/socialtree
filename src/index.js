@@ -1,6 +1,6 @@
 import express from 'express'
 import yaml from 'js-yaml'
-import fs, { cpSync } from 'node:fs'
+import fs from 'node:fs'
 
 console.log('🔧 Configuring socialtree...')
 
@@ -10,7 +10,7 @@ const engine = 'ejs'
 
 app.set('view engine', engine)
 app.set('views', './src/views')
-app.use(express.static('src/public'))
+app.use(express.static('src/dist'))
 app.use(express.static('src/assets'))
 
 app.get('/', (req, res) => {
@@ -18,7 +18,8 @@ app.get('/', (req, res) => {
     res.render('index', {
         name: config.name,
         filenameProfilePic: config.profilePic ? config.profilePic : 'profilepic.jpg',
-        links: config.links
+        links: config.links,
+        theme: config.theme
     })
 })
 

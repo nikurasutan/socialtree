@@ -9,7 +9,7 @@
     </div>
     <div class="linkbox">
         <% links.forEach(link => { %>
-        <p>Hello World</p>
+        <button class="<%= `${link.brandcolor} ${link.color}` %>"><%= link.text %></button>
         <% }) %>
     </div>
 </div>
