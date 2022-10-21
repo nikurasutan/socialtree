@@ -9,8 +9,8 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js & $npm_execpath run watch-css",
-    "watch-css": "run-when-changed --watch 'src/public/themes/*.scss' --watch 'src/public/util/*.scss' --exec 'sass src/public/themes:src/dist/style & echo \"🎨 Rebuilded your css\"'",
-    "build": "sass src/public/themes:src/dist/style"
+    "watch-css": "run-when-changed --watch 'src/public/themes/*.scss' --watch 'src/public/util/*.scss' --exec '$npm_execpath run build'",
+    "build": "sass src/public/themes:src/dist/style & echo \"🎨 Rebuilded your css\""
   },
   "dependencies": {
     "ejs": "^3.1.8",
