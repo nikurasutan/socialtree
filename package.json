@@ -8,8 +8,8 @@
   "license": "MIT",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "nodemon src/index.js & sass --watch src/public/themes:src/dist/style",
-    "watch-css": "sass --watch src/public/themes:src/dist/style",
+    "dev": "nodemon src/index.js & $npm_execpath run watch-css",
+    "watch-css": "run-when-changed --watch 'src/public/themes/*.scss' --watch 'src/public/util/*.scss' --exec 'sass src/public/themes:src/dist/style & echo \"🎨 Rebuilded your css\"'",
     "build": "sass src/public/themes:src/dist/style"
   },
   "dependencies": {
@@ -19,6 +19,7 @@
     "sass": "^1.55.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "run-when-changed": "^2.1.0"
   }
 }
