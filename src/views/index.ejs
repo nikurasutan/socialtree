@@ -9,7 +9,9 @@
     </div>
     <div class="linkbox">
         <% links.forEach(link => { %>
-        <button class="<%= `${link.brandcolor} ${link.color}` %>"><%= link.text %></button>
+        <a href="<%= link.hyperlink %>"> 
+            <button class="<%= `${link.brandcolor} ${link.color}` %>"><%= link.text %></button>
+        </a>
         <% }) %>
     </div>
 </div>
