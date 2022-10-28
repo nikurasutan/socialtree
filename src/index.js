@@ -19,6 +19,7 @@ app.get('/', (req, res) => {
         name: config.name,
         filenameProfilePic: config.profilePic ? config.profilePic : 'profilepic.jpg',
         links: config.links,
+        smallLinks: config.smallLinks,
         theme: config.theme
     })
 })

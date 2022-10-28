@@ -9,3 +9,10 @@ links:
   - text: "Twitter"
     hyperlink: "test"
     brandcolor: "twitter"
+smallLinks:
+  - platform: "twitter"
+    hyperlink: "https://twitter.com"
+  - platform: "facebook"
+    hyperlink: "https://facebook.com"
+  - platform: "youtube"
+    hyperlink: "https://youtu.be"

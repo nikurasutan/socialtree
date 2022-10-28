@@ -1,5 +1,6 @@
 @import '../util/main.scss';
 @import '../util/simple-basic.scss';
+@import '../util/colors.scss';
 
 body {
     background-image: linear-gradient(165deg, #c7a25c 0%, #ff9601 43%, #980d0d 100%);
@@ -7,4 +8,25 @@ body {
 
 .headingbox {
     color: #FFFFFF;
+}
+
+.mainLinkbox {
+    >a {
+        >button {
+            background-color: $no_alpha;
+            color: $white;
+            border-color: $white;
+
+            &:hover {
+                background-color: $white;
+                color: #ff9601;
+            }
+        }
+    }
+}
+
+.smallLinkbox {
+    a {
+        color: $white;
+    }
 }

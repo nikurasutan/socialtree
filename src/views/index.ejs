@@ -7,11 +7,18 @@
     <div class="headingbox">
         <h1><%= name %></h1>
     </div>
-    <div class="linkbox">
+    <div class="mainLinkbox">
         <% links.forEach(link => { %>
         <a href="<%= link.hyperlink %>"> 
             <button class="<%= `${link.brandcolor} ${link.color}` %>"><%= link.text %></button>
         </a>
+        <% }) %>
+    </div>
+    <div class="smallLinkbox">
+        <% smallLinks.forEach(link => { %>
+            <a href="<%= link.hyperlink %>">
+                <i class="fa fa-<%= link.platform.toLowerCase() %>" aria-hidden="true"></i>
+            </a>
         <% }) %>
     </div>
 </div>
