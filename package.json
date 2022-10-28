@@ -9,17 +9,20 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js & $npm_execpath run watch-css",
+    "clean": "rimraf src/dist",
     "watch-css": "run-when-changed --watch 'src/public/themes/*.scss' --watch 'src/public/util/*.scss' --exec '$npm_execpath run build'",
-    "build": "sass src/public/themes:src/dist/style & echo \"🎨 Rebuilded your css\""
+    "build": "sass src/public/themes:src/dist/style & echo \"🎨 Rebuilded your css\"",
+    "build-prod": "sass --style=compressed src/public/themes:src/dist/style"
   },
   "dependencies": {
     "ejs": "^3.1.8",
     "express": "^4.18.2",
-    "js-yaml": "^4.1.0",
-    "sass": "^1.55.0"
+    "js-yaml": "^4.1.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.20",
-    "run-when-changed": "^2.1.0"
+    "rimraf": "^3.0.2",
+    "run-when-changed": "^2.1.0",
+    "sass": "^1.55.0"
   }
 }

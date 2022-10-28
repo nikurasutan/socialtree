@@ -11,10 +11,10 @@ const engine = 'ejs'
 app.set('view engine', engine)
 app.set('views', './src/views')
 app.use(express.static('src/dist'))
-app.use(express.static('src/assets'))
+app.use(express.static('assets'))
 
 app.get('/', (req, res) => {
-    let config = yaml.load(fs.readFileSync('config/config.yml'), 'utf8')
+    let config = yaml.load(fs.readFileSync('assets/config/config.yml'), 'utf8')
     res.render('index', {
         name: config.name,
         filenameProfilePic: config.profilePic ? config.profilePic : 'profilepic.jpg',
