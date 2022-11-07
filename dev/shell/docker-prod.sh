@@ -1,0 +1,1 @@
+docker build -t nikurasukun/socialtree -f dev/docker/images/main/Dockerfile --no-cache .
