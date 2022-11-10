@@ -1,3 +1,4 @@
 node_modules
 src/dist
 dev/docker/stacks/main/assets
+.env

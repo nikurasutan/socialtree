@@ -1,11 +1,13 @@
 import express from 'express'
 import yaml from 'js-yaml'
 import fs from 'node:fs'
+import * as dotenv from 'dotenv'
 
 console.log('🔧 Configuring socialtree...')
 
+dotenv.config()
 const app = express()
-const port = 3000
+const port = process.env.PORT
 const engine = 'ejs'
 
 app.set('view engine', engine)

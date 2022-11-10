@@ -4,10 +4,9 @@ WORKDIR /app
 COPY src/ ./src
 COPY package.json ./
 COPY yarn.lock ./
+COPY .env.example ./.env
 COPY assets /assets
 COPY dev/shell/entrypoint.sh /entrypoint.sh
-RUN yarn
-RUN yarn clean
-RUN yarn build-prod
+RUN yarn && yarn clean && yarn build-prod
 EXPOSE 3000
 ENTRYPOINT ["/bin/sh", "/entrypoint.sh"]

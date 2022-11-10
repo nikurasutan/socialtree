@@ -1,1 +1,1 @@
-docker build -t git.oishi-ra.men/nikurasu/socialtree-js -f dev/docker/images/main/Dockerfile --no-cache .
+docker build -t git.oishi-ra.men/nikurasu/socialtree-js:latest -f dev/docker/images/main/Dockerfile --no-cache .
