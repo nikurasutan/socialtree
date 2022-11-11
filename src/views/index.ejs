@@ -6,6 +6,11 @@
     </div>
     <div class="headingbox">
         <h1><%= name %></h1>
+        <% if(summaryText !== '') { %>
+            <div class="summaryBox">
+                <p class="summaryText"><%= summaryText %></p>
+            </div>
+        <% } %>
     </div>
     <div class="mainLinkbox">
         <% links.forEach(link => { %>

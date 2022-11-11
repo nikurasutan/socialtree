@@ -20,6 +20,7 @@ app.get('/', (req, res) => {
     res.render('index', {
         name: config.name,
         filenameProfilePic: config.profilePic ? config.profilePic : 'profilepic.jpg',
+        summaryText: config.summaryText ? config.summaryText: '',
         links: config.links,
         smallLinks: config.smallLinks,
         theme: config.theme
