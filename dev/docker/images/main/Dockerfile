@@ -4,7 +4,7 @@ WORKDIR /app
 COPY src/ ./src
 COPY package.json ./
 COPY yarn.lock ./
-COPY .env.example ./.env
+COPY .env ./.env
 COPY assets /assets
 COPY dev/shell/entrypoint.sh /entrypoint.sh
 RUN yarn && yarn clean && yarn build-prod
