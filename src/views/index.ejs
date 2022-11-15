@@ -14,7 +14,7 @@
     </div>
     <div class="mainLinkbox">
         <% links.forEach(link => { %>
-        <a href="<%= link.hyperlink %>"> 
+        <a <% if(link.verify && link.verify.toLowerCase() === 'mastodon') { %> rel="me" <% } %> href="<%= link.hyperlink %>"> 
             <button class="<%= `${link.brandcolor} ${link.color}` %>"><%= link.text %></button>
         </a>
         <% }) %>

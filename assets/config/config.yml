@@ -8,6 +8,7 @@ links:
     brandcolor: "youtube"                       # set this if you want to set the color of the link to the brand color of a platform...
     color: "#0D0D0D"                            # or that if you want to set it to an exact color
   - text: "Twitter"
+    verify: "Mastodon"
     hyperlink: "test"
     brandcolor: "twitter"
 smallLinks:
