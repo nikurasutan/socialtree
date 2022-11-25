@@ -1,0 +1,27 @@
+@import '../util/main.scss';
+@import '../util/blurred-basic.scss';
+@import '../util/colors.scss';
+
+$gradient1: #e0f3ff;
+$gradient2: #d5efff;
+$gradient3: #a6d0ff;
+$gradient4: #c1dbff;
+
+
+body {
+    background-image: linear-gradient(120deg, $gradient1, $gradient2, $gradient3, $gradient4, $gradient3, $gradient2, $gradient1);
+}
+
+.mainLinkbox {
+    >a{
+        >button{
+            background-color: $white;
+        }
+    }
+}
+
+.smallLinkbox {
+    a {
+        color: $white;
+    }
+}

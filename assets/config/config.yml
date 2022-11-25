@@ -1,7 +1,7 @@
 name: "Nikurasu"                                # The name on the linktree
 # summaryText: 'A simple sample text'           # A short summary for what you do, will appear under the name if uncommened
 # profilePic:                                   # uncomment and set this if your profile pic has a custom name
-theme: 'simple-orange'
+theme: 'blurred-white'
 links:
   - text: "YouTube"                             # text on the link
     hyperlink: "Test"                           # the actual hyperlink
