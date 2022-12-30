@@ -7,7 +7,7 @@ console.log('🔧 Configuring socialtree...')
 
 dotenv.config()
 const app = express()
-const port = process.env.PORT
+const port = process.env.PORT || 3000
 const engine = 'ejs'
 
 app.set('view engine', engine)
@@ -23,7 +23,8 @@ app.get('/', (req, res) => {
         summaryText: config.summaryText ? config.summaryText: '',
         links: config.links,
         smallLinks: config.smallLinks,
-        theme: config.theme
+        theme: config.theme,
+        roundPB: config.roundPB
     })
 })
 

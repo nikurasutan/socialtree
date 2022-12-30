@@ -3,3 +3,6 @@ src/dist
 dev/docker/stacks/main/assets
 .env
 .DS_Store
+.yarn
+yarn.lock
+.yarnrc.yml
