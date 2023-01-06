@@ -2,10 +2,14 @@
 *The awesome and damn simple, selfhosted alternative to linktree*
 ---
 ## TODO:
-- [ ] working template
+- [X] working template
 - [ ] overwrites of default styles with css `!important` for round profile-pic etc.
 - [ ] more styles
 - [X] Dockerize
+
+### TODO until 1.0:
+- [ ] Import my styles from the old socialtree
+- [X] Overwrite for round profile pictures
 
 ## Setup
 A up to date docker image is provided at my gitea, but you can also build it yourself.
