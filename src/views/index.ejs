@@ -1,30 +1,4 @@
 <%- include('partials/head') %> 
 <%- include('partials/header') %> 
-<div class="container">
-    <div class="imgbox">
-        <img src="img/<%= filenameProfilePic %> " alt="">
-    </div>
-    <div class="headingbox">
-        <h1><%= name %></h1>
-        <% if(summaryText !== '') { %>
-            <div class="summaryBox">
-                <p class="summaryText"><%= summaryText %></p>
-            </div>
-        <% } %>
-    </div>
-    <div class="mainLinkbox">
-        <% links.forEach(link => { %>
-        <a <% if(link.verify && link.verify.toLowerCase() === 'mastodon') { %> rel="me" <% } %> href="<%= link.hyperlink %>"> 
-            <button class="<%= `${link.brandcolor} ${link.color}` %>"><%= link.text %></button>
-        </a>
-        <% }) %>
-    </div>
-    <div class="smallLinkbox">
-        <% smallLinks.forEach(link => { %>
-            <a href="<%= link.hyperlink %>">
-                <i class="fa fa-<%= link.platform.toLowerCase() %>" aria-hidden="true"></i>
-            </a>
-        <% }) %>
-    </div>
-</div>
+<%- include('partials/defaultMain') %>
 <%- include('partials/footer') %> 
