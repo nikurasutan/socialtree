@@ -1,4 +1,8 @@
 <%- include('partials/head') %> 
 <%- include('partials/header') %> 
-<%- include('partials/defaultMain') %>
+<% if(customMainTagThemes.includes(theme)) { %>
+  <%- include(`partials/${theme}_main`) %>
+<% } else { %>
+  <%- include('partials/defaultMain') %>
+<% } %>
 <%- include('partials/footer') %> 

@@ -10,6 +10,10 @@ const app = express()
 const port = process.env.PORT || 3000
 const engine = 'ejs'
 
+const customMainTagThemes = [
+    '89'
+]
+
 app.set('view engine', engine)
 app.set('views', './src/views')
 app.use(express.static('src/dist'))
@@ -24,7 +28,8 @@ app.get('/', (req, res) => {
         links: config.links,
         smallLinks: config.smallLinks,
         theme: config.theme,
-        roundPB: config.roundPB
+        roundPB: config.roundPB,
+        customMainTagThemes
     })
 })
 
