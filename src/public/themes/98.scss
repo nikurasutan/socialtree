@@ -1,0 +1,40 @@
+@import '../util/main.scss';
+
+body {
+    background-color: #008080;
+}
+
+.container {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    .img-window {
+        width: 11rem;
+        img {
+            width: 10rem;
+        }
+    }
+    
+    .link-window {
+        width: 750px;
+        max-width: 90vw;
+
+        .mainLinkbox {
+            margin: .5rem 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: .5rem
+        }
+
+        .smallLinkbox {
+            a {
+                text-decoration: none;
+                color: unset;
+            }
+        }
+    }
+}

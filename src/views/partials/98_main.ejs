@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="window img-window">
+        <div class="title-bar">
+            <div class="title-bar-text">ImgViewer.exe</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="imgbox window-body">
+            <img src="img/<%= filenameProfilePic %> " alt="">
+        </div>
+    </div>
+    <div class="window link-window">
+        <div class="title-bar">
+            <div class="title-bar-text"><%= name %>.exe</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="mainLinkbox">
+            <% links.forEach(link => { %>
+            <a <% if(link.verify && link.verify.toLowerCase() === 'mastodon') { %> rel="me" <% } %> href="<%= link.hyperlink %>"> 
+                <button class="<%= `${link.brandcolor} ${link.color}` %>"><%= link.text %></button>
+            </a>
+            <% }) %>
+        </div>
+        <div class="status-bar">
+            <div class="smallLinkbox status-bar-field">
+                <% smallLinks.forEach(link => { %>
+                    <a href="<%= link.hyperlink %>">
+                        <i class="fa fa-<%= link.platform.toLowerCase() %>" aria-hidden="true"></i>
+                    </a>
+                <% }) %>
+            </div>
+            <div class="status-bar-field">
+                <%= Intl.DateTimeFormat('en-US').format(Date.now()) %>
+            </div>
+            <div class="status-bar-field">
+                Powered by <a href="https://dev.cat-enby.club/Nikurasu/socialtree-js">Socialtree</a>
+            </div>
+        </div>
+    </div>
+</div>

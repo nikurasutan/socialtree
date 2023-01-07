@@ -8,8 +8,11 @@
 - [X] Dockerize
 
 ### TODO until 1.0:
-- [ ] Import my styles from the old socialtree
+- [X] Import my styles from the old socialtree
 - [X] Overwrite for round profile pictures
+- [ ] Testing if everything works like expected
+- [ ] Expand Documentation
+- [ ] Rewrite README
 
 ## Setup
 A up to date docker image is provided at my gitea, but you can also build it yourself.
