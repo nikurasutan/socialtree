@@ -1,3 +1,4 @@
+assets/config/config.yml
 node_modules
 src/dist
 dev/docker/stacks/main/assets
@@ -6,3 +7,5 @@ dev/docker/stacks/main/assets
 .yarn
 yarn.lock
 .yarnrc.yml
+.pnp.cjs
+.pnp.loader.mjs
