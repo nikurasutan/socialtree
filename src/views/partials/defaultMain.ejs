@@ -18,10 +18,12 @@
         <% }) %>
     </div>
     <div class="smallLinkbox">
-        <% smallLinks.forEach(link => { %>
-            <a href="<%= link.hyperlink %>">
-                <i class="fa fa-<%= link.platform.toLowerCase() %>" aria-hidden="true"></i>
-            </a>
-        <% }) %>
+        <% if(smallLinks && smallLinks.length > 0) { %>
+            <% smallLinks.forEach(link => { %>
+                <a href="<%= link.hyperlink %>">
+                    <i class="fa fa-<%= link.platform.toLowerCase() %>" aria-hidden="true"></i>
+                </a>
+            <% }) %>
+        <% } %>
     </div>
 </div>

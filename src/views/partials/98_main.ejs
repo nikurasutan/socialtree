@@ -11,6 +11,11 @@
         <div class="imgbox window-body">
             <img src="img/<%= filenameProfilePic %> " alt="">
         </div>
+        <% if(summaryText !== '') { %>
+            <div class="status-bar">
+                <div class="status-bar-field"><%= summaryText %></div>
+            </div> 
+        <% } %>
     </div>
     <div class="window link-window">
         <div class="title-bar">
