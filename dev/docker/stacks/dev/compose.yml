@@ -1,0 +1,13 @@
+version: '3'
+services:
+  app:
+    image: node:lts-alpine
+    container_name: socialtree
+    environment:
+      PORT: 3000
+    ports:
+      - 3000:3000
+    volumes:
+      - ../../../../:/app
+      - ./docker-entrypoint.sh:/docker-entrypoint.sh
+    entrypoint: ["sh", "/docker-entrypoint.sh"]
