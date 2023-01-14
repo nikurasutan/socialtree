@@ -10,7 +10,7 @@
 ### TODO until 1.0:
 - [X] Import my styles from the old socialtree
 - [X] Overwrite for round profile pictures
-- [ ] Testing if everything works like expected
+- [X] Testing if everything works like expected
 - [ ] Expand Documentation
 - [ ] Rewrite README
 
