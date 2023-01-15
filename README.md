@@ -1,10 +1,13 @@
 # Socialtree
 *The awesome and damn simple, selfhosted alternative to linktree*
 ---
+[![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://www.javascript.com)
+[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://dev.cat-enby.club/Nikurasu/socialtree-js/raw/branch/main/LICENSE.txt)
 ## TODO:
 - [X] working template
 - [ ] overwrites of default styles with css `!important` for round profile-pic etc.
 - [ ] more styles
+- [ ] more variations of the styles in version 1.0
 - [X] Dockerize
 
 ### TODO until 1.0:
