@@ -3,6 +3,8 @@
 ---
 [![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://www.javascript.com)
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://dev.cat-enby.club/Nikurasu/socialtree-js/raw/branch/main/LICENSE.txt)
+[![Speed  - Blazing ⚡](https://img.shields.io/badge/Speed_-Blazing_⚡-blue)](https://www.youtube.com/watch?v=oPTwBv9lvhw)
+
 ## TODO:
 - [X] working template
 - [ ] overwrites of default styles with css `!important` for round profile-pic etc.
