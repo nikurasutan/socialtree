@@ -5,15 +5,19 @@
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://dev.cat-enby.club/Nikurasu/socialtree-js/raw/branch/main/LICENSE.txt)
 [![Speed  - Blazing ⚡](https://img.shields.io/badge/Speed_-Blazing_⚡-blue)](https://www.youtube.com/watch?v=oPTwBv9lvhw)
 
+- [TODO](#todo)
+- [Setup](#setup)
+- [Build your own Themes](#build-your-own-theme)
+
 ## TODO:
 - [X] working template
-- [ ] overwrites of default styles with css `!important` for round profile-pic etc.
-- [ ] more styles
-- [ ] more variations of the styles in version 1.0
+- [ ] overwrites of default themes with css `!important` for round profile-pic etc.
+- [ ] more themes
+- [ ] more variations of the themes in version 1.0
 - [X] Dockerize
 
 ### TODO until 1.0:
-- [X] Import my styles from the old socialtree
+- [X] Import my themes from the old socialtree
 - [X] Overwrite for round profile pictures
 - [X] Testing if everything works like expected
 - [ ] Expand Documentation
@@ -31,3 +35,6 @@ A up to date docker image is provided at my gitea, but you can also build it you
 1. Done with docker-compose. Use the file at `dev/docker/stacks/main/compose.yml` and edit it to your needs.
 2. Configure the resulting config.yml file under your mounted assets volume `config/config.yml` and replace the profile pic in the img folder `img/profilepic.jpg`.
    The image name can be ajusted in the config file if needed.
+
+## Build your own theme
+1. Create a new scss file with the themes name in `/src/public/themes`
