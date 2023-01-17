@@ -22,8 +22,8 @@
 - [X] Import my themes from the old socialtree
 - [X] Overwrite for round profile pictures
 - [X] Testing if everything works like expected
-- [ ] Expand Documentation
-- [ ] Rewrite README
+- [X] Expand Documentation
+- [X] Rewrite README
 
 ## Setup
 A up to date docker image is provided at my gitea, but you can also build it yourself.
