@@ -10,7 +10,7 @@ const app = express()
 const port = process.env.PORT || 3000
 const engine = 'ejs'
 
-const customMainTagThemes = [
+const customMainPartialThemes = [ // Array of themes that require a custom main partial
     '98'
 ]
 
@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
         smallLinks: config.smallLinks,
         theme: config.theme,
         roundPB: config.roundPB,
-        customMainTagThemes
+        customMainPartialThemes: customMainPartialThemes
     })
 })
 

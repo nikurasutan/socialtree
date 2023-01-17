@@ -1,20 +1,20 @@
 name: "Nikurasu"                                # The name on the linktree
-# summaryText: 'A simple sample text'           # A short summary for what you do, will appear under the name if uncommened
+# summaryText: 'A simple sample text'           # A short summary for what you do, will appear if uncommened
 # profilePic:                                   # uncomment and set this if your profile pic has a custom name
-roundPB: false
-theme: '98'
-links:
+roundPB: false                                  # Set true if you want a round profile picture
+theme: '98'                                     # Your theme
+links:                                          # the links to your social accounts
   - text: "YouTube"                             # text on the link
     hyperlink: "Test"                           # the actual hyperlink
-    brandcolor: "youtube"                       # set this if you want to set the color of the link to the brand color of a platform...
-    color: "#0D0D0D"                            # or that if you want to set it to an exact color
+    verify: "Mastodon"                          # set it if your want to verify the link, have a look for the currently supported platforms in the readme
+    brandcolor: "youtube"                       # set this if you want to set the color of the link to the brand color of a platform... (not supported by all themes)
+    color: "#0D0D0D"                            # or that if you want to set it to an exact color (not supported by all themes)
   - text: "Twitter"
-    verify: "Mastodon"
     hyperlink: "test"
     brandcolor: "twitter"
-smallLinks:
-  - platform: "twitter"
-    hyperlink: "https://twitter.com"
+smallLinks:                                     # the links in the small box below the main tree, unset if you dont want it
+  - platform: "twitter"                         # used for choosing the icon, I use font-awesome here so all icons of that font are available here
+    hyperlink: "https://twitter.com"            # the hyperlink
   - platform: "facebook"
     hyperlink: "https://facebook.com"
   - platform: "youtube"
