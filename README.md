@@ -17,6 +17,7 @@
 - [ ] more themes
 - [ ] more variations of the themes in version 1.0
 - [X] Dockerize
+- [ ] Redirection with Routes (your-domain.xyz/mastodon redirects to your mastodon account)
 
 ### TODO until 1.0:
 - [X] Import my themes from the old socialtree

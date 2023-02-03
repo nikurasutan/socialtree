@@ -1,6 +1,6 @@
 {
   "name": "socialtree",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "The awesome and damn simple, selfhosted alternative to linktree",
   "main": "src/index.js",
   "author": "nikurasu",
