@@ -1,7 +1,7 @@
 version: '3'
 services:
   app:
-    image: git.oishi-ra.men/nikurasu/socialtree-js:latest
+    image: dev.cat-enby.club/nikurasu/socialtree:latest
     container_name: socialtree
     environment:
       PORT: 3000
