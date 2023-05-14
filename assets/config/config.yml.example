@@ -1,6 +1,8 @@
 name: "Nikurasu"                                # The name on the linktree
 # summaryText: 'A simple sample text'           # A short summary for what you do, will appear if uncommened
 # profilePic:                                   # uncomment and set this if your profile pic has a custom name
+url: "https://links.nikurasu.gay"               # URL of your SocialTree
+siteName: 'NikuHost'                            # Name of the site visible in embeds, used for Link previews
 roundPB: false                                  # Set true if you want a round profile picture
 theme: '98'                                     # Your theme
 links:                                          # the links to your social accounts
